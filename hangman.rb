@@ -49,10 +49,6 @@ class Hangman
   end
 
   def win_condition
-    # compare = @user_guess
-    # compare = compare.map {|letter| letter.gsub(/\s/, '')}
-    # print compare
-    # print @secret_word_arr
     if @user_guess.difference(@secret_word_arr).any? == false || @wrong_guess_arr.length == 6 
       ending = true
     else
